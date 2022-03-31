@@ -8,7 +8,7 @@ function openNav() {
     var women=[
     {
          id:1, "imageUrl": "https://static.zara.net/photos///2022/V/0/1/p/2496/912/250/2/w/423/2496912250_2_1_1.jpg?ts=1648124021285",
-        "brandName": "DOUBLE-BREASTED LACE BLAZER LONG SLEEVE BLAZER WITH A LAPEL COLLAR. FEATURING SIDE VENTS AT THE HEM AND DOUBLE-BREASTED FASTENING WITH MATCHING BUTTONS.",
+        "brandName": "DOUBLE-BREASTED LACE BLAZER LONG SLEEVE.",
         "priceOf": "8990.00"
     },
     {

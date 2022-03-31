@@ -1,7 +1,7 @@
 var addTocartArr = JSON.parse(localStorage.getItem("addtocartData"))
 console.log(addTocartArr)
 function displayData(addTocartArr){
-// document.getElementById("cartpagemaindiv1").innerHTML="";
+
 
     addTocartArr.map(function(ele,index){
 
@@ -81,7 +81,7 @@ function decreasefun(ele){
         pricedetailsmaindiv4div2.innerText=pricedetailsmaindiv1div2.innerText-pricedetailsmaindiv3div2.innerText
 
 
-        // displayData(addTocartArr);
+        
 
 }
 
@@ -91,7 +91,7 @@ function decreasefun(ele){
      
  },0)
 
-//  pricedetailsmaindiv1div2.innerText=total;
+ 
 
 function handleDelete(name,cartdiv){
   let cartdata= JSON.parse( localStorage.getItem('addtocartData'))
@@ -100,11 +100,18 @@ function handleDelete(name,cartdiv){
    localStorage.setItem("addtocartData",JSON.stringify(filteredArr))
    displayData(filteredArr)
    alert("Item deleted from Cart")
-//    if(filteredArr.length==0){
-//     var nocart = document.createElement("h1")
-//     nocart.innerText="No Cart Products"
-//     nocart.style.color="deeppink"
-//     document.querySelector("cartpagemaindiv1").append(nocart)
-// }
+
+
+
+
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 }
 

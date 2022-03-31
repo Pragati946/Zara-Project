@@ -218,21 +218,14 @@
     background-color: white;
 }
 
-/* #proceedtoPayment{
-    background-color: black;
-    color: white;
-    width: 95%;
-    height: 30px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-} */
+
 
 
 #cartdiv{
     display: flex;
+}
+#cart:hover{
+    cursor: pointer;
 }
 #cartimg{
     width: 100px;

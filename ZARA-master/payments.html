@@ -14,18 +14,21 @@
         #paymentDetailsdiv{
             width: 98%;
             height: 300px;
-            /* border: 1px solid red; */
+
             background-color:rgb(250,249,249);
         }
         #selectPaymentMethod{
             width: 98%;
             margin: auto;
             height: 30px;
-            /* background-color: white; */
-            /* border: 1px solid green; */
+       
+
             font-size: 14px;
             color: #6C757D;
             padding-top: 8px;
+        }
+        #footer{
+            margin-top: 80%;;
         }
         #instantPay{
             display: flex;
@@ -183,8 +186,6 @@
             width: 20px;
             height: 20px;
             margin-right: 15px;
-            /* border: 3px solid deeppink;
-            background-color: deeppink; */
             background-color:white;
         }
         #credittext{
@@ -332,21 +333,41 @@
             <div><i class="fa-solid fa-bag-shopping"></i></div>
         </div>
     </div>
-    <!-- <div id="navbar">
-        <img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="" style="margin-left: 50px;"/>
-        <div>MAKEUP</div>
-        <div>BRUSHES</div>
-        <div>SKINCARE</div>
-        <div>TRENDING</div>
-        <div>BLOG</div>
-        <div>OFFERS</div>
-    </div>  -->
-    <!-- <h1>Payment Page</h1> -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="women" href="women.html">WOMAN</a>
+        <a id="man" href="men.html">MAN</a>
+        <a href="women.html">BEST SELLERSNEW</a>
+        <a href="women.html">BLAZERS</a>
+        <a href="women.html">DRESSES | JUMPSUITS</a>
+        <a href="women.html">SHIRTS</a>
+        <a href="women.html">TROUSERS</a>
+        <a href="women.html">TOPS | CORSETS</a>
+        <a href="women.html">BODYSUITS</a>
+        <a href="women.html">T-SHIRTS</a>
+        <a href="women.html">JEANS</a>
+        <a href="women.html">SKIRTS</a>
+        <a href="women.html">SHORTS | SKORTS</a>
+        <a href="women.html">CO-ORD SETS</a>
+        <a href="women.html">SUITS</a>
+        <a href="women.html">BASICSNEW</a>
+        <a href="men.html">KNITWEAR</a>
+        <a href="men.html">SWEATSHIRTS</a>
+        <a href="men.html">COATS | TRENCH COATS</a>
+        <a href="men.html">JACKETS | OVERSHIRTS</a>
+        <a href="men.html">SHOES</a>
+        <a href="men.html">BAGS</a>
+        <a href="men.html">SWIMWEARNEW</a>
+        <a href="men.html">ACCESSORIES</a>
+        <a href="men.html">PERFUMES</a>
+        <a href="men.html">SPRING BREEZE</a>
+        <a href="men.html">SPECIAL PRICES</a>
+        <a href="men.html">SPECIAL EDITION</a>
+        <a href="men.html">JOIN LIFE</a>
+        
+      </div>
     <div id="mainpaymentdiv">
-        <!-- <div id="mainpayment1">
-            <div id="totalpriceinformation"></div>
-            <div id="showcartproducts"></div>
-        </div> -->
+        
         <div id="optionforpayment" style="margin-left: 15%;margin-top: 70px;"></div>
     </div>
 
@@ -411,9 +432,9 @@
 </html>
 <script src="Payment.js"></script>
 
-<!-- totalpriceinformation -->
+
 <script>
-    //div2
+ 
     var cartpagemaindiv21 = document.createElement("div")
   
     var cartpagemaindiv22=document.createElement("div");
