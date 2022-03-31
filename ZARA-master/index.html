@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    
+<style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  </style>
+</head>
+
+<body style="background-color:white">
+   
+    <div id="navbar">
+       
+        <div id="zara">
+            <span id="menu" id="humburger" style="font-size:30px;cursor:pointer;color:black;padding-top:200px;" onclick="openNav()">&#9776;</span>  
+            <div> <a href="index.html">
+                    <img src="data:image/png;base64,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"
+                        alt=""></div></a>
+                        
+
+        </div>
+
+        <div id="right">
+            <div id="search">SEARCH</div>
+            <div><a href="login.html">LOGIN</a></div>
+            <div> </div>
+            <div>HELP</div>
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="women" href="women.html">WOMAN</a>
+        <a id="man" href="men.html">MAN</a>
+        <a href="men.html">BEST SELLERSNEW</a>
+        <a href="men.html">BLAZERS</a>
+        <a href="men.html">DRESSES | JUMPSUITS</a>
+        <a href="men.html">SHIRTS</a>
+        <a href="men.html">TROUSERS</a>
+        <a href="men.html">TOPS | CORSETS</a>
+        <a href="men.html">BODYSUITS</a>
+        <a href="men.html">T-SHIRTS</a>
+        <a href="men.html">JEANS</a>
+        <a href="men.html">SKIRTS</a>
+        <a href="men.html">SHORTS | SKORTS</a>
+        <a href="men.html">CO-ORD SETS</a>
+        <a href="women.html">SUITS</a>
+        <a href="women.html">BASICSNEW</a>
+        <a href="women.html">KNITWEAR</a>
+        <a href="women.html">SWEATSHIRTS</a>
+        <a href="women.html">COATS | TRENCH COATS</a>
+        <a href="women.html">JACKETS | OVERSHIRTS</a>
+        <a href="women.html">SHOES</a>
+        <a href="women.html">BAGS</a>
+        <a href="women.html">SWIMWEARNEW</a>
+        <a href="women.html">ACCESSORIES</a>
+        <a href="women.html">PERFUMES</a>
+        <a href="women.html">SPRING BREEZE</a>
+        <a href="women.html">SPECIAL PRICES</a>
+        <a href="women.html">SPECIAL EDITION</a>
+        <a href="women.html">JOIN LIFE</a>
+        
+      </div>
+     
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-new/subhome-xmedia-12//w/666/IMAGE-landscape-71b88bb4-9a17-4e15-a523-c65b29e4157b-default_0.jpg?ts=1648137395834" style="width:100%;">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-zepetto/subhome-xmedia-13//w/1366/IMAGE-landscape-fill-5a58eda2-b8e1-49d0-a7ef-0f04ff433d46-default_0.jpg?ts=1648544877675" style="width:100%;margin-left: 10%;">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///2022/V/T/1/p/0287/194/625/2/w/429/0287194625_1_1_1.jpg?ts=1648548402120" style="width:70%;margin-left: 20%;">
+        <div class="text">Caption Three</div>
+      </div>
+      
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-beauty-new/subhome-xmedia-10//w/671/IMAGE-large-landscape-48dab257-8de6-409e-a17d-06c2a266aeb7-default_0.jpg?ts=1646676182872" style="width:70%;margin-left: 15%">
+        <div class="text">Caption Four</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///2022/V/M/1/p/0000/002/222/2/w/429/0000002222_15_2_1.jpg?ts=1648202501338" style="width:70%;margin-left: 28%;">
+        <div class="text">Caption Five</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///2022/V/4/1/p/2619/049/052/4/w/877/2619049052_9_2_1.jpg?ts=1646052813613" style="width:70%;margin-left: 28%;">
+        <div class="text">Caption Five</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-12//w/666/IMAGE-landscape-c89f2af3-dba4-4f7c-adcb-b444de6e5c90-default_0.jpg?ts=1648211111110" style="width:70%;margin-left: 15%;">
+        <div class="text">Caption Five</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-kids-home/subhome-xmedia-12//w/666/IMAGE-landscape-61b4a2fd-c529-4838-8127-af0f01214112-default_0.jpg?ts=1648141508350" style="width:70%;margin-left: 15%;">
+        <div class="text">Caption Five</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-new-home/subhome-xmedia-12//w/666/IMAGE-landscape-dbf84a2f-7e66-40c5-8a7b-756d10f89634-default_0.jpg?ts=1648142664240" style="width:70%;margin-left: 15%;">
+        <div class="text">Caption Five</div>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+         <span class="dot"></span> 
+      </div>
+    <div id="home">
+        <div class="img " id="home_pehli_img">
+            <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-12-1-dark-mode//w/671/IMAGE-large-landscape-2d9a60c0-de38-4915-83b6-a10adcd18039-default_0.jpg?ts=1647881844775"
+                alt="">
+        </div>
+        <div class="img">
+            <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-total-look/subhome-xmedia-13//w/666/IMAGE-landscape-6785873f-7105-4533-9af7-59d0db3a975e-default_0.jpg?ts=1648457044610" alt="">
+        </div>
+        <div class="img" ><img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-subhomes-studio-collection/subhome-xmedia-north-woman-launch-12-1-dark-mode//w/929/IMAGE-landscape-74f993cd-43f2-4dd7-82a2-e484d0dc1959-default_0.jpg?ts=1647883492007"
+                alt=""></div>
+        <div class="img"><img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-12-dark-mode-//w/671/IMAGE-landscape-e2b9d060-6fc0-4ab5-853c-5dfb9cedebaf-default_0.jpg?ts=1648219151894"
+                alt=""></div>
+        <div class="img"><img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-shoes-bags/subhome-xmedia-12-dark-mode-//w/671/IMAGE-large-landscape-0d947e9b-f7d3-4102-ac5d-2254b98ce235-default_0.jpg?ts=1647877718611"
+                alt=""></div>
+        <div class="img"><img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-join-life/subhome-xmedia-12-dark-mode-//w/671/IMAGE-large-landscape-f16ae52e-2bd2-41d4-b18b-7470881ef7f4-default_0.jpg?ts=1647877945570"
+                alt=""></div>
+        <div class="img " id="home_last_img"><img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-join-life/subhome-xmedia-13//w/671/IMAGE-landscape-7df25fb1-31b4-4b8f-8eed-0c9bbb3cb0f8-default_0.jpg?ts=1648455703881" alt=""></div>
+
+
+
+    </div>
+    <div id="foot">
+        <div>EARTH HOUR</div>
+        <div>A FLOWER FOR YOU</div>
+        <div>NEW</div>
+        <div>STUDIO COLLECTION</div>
+        <div>TROUSERS</div>
+        <div>SHOES</div>
+        <div>JOIN LIFE</div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="./javascript/index.js">
+  
+    </script>
