@@ -5,6 +5,12 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+
+
+
+
+
     var women=[
     {
          id:1, "imageUrl": "https://static.zara.net/photos///2022/V/0/1/p/2496/912/250/2/w/423/2496912250_2_1_1.jpg?ts=1648124021285",
@@ -166,21 +172,4 @@ function addTobag(elem){
  localStorage.setItem("bag",JSON.stringify(elem));
  window.location.href="bag.html"
 }
-    // women.map(function(elem){
-    //     var box = document.createElement("div");
-    //   var image= document.createElement("img");
-    //   image.src=elem.imageUrl;
-    //   image.setAttribute("class","img")
-
-    //   var para = document.createElement("p");
-    //   para.innerText=elem.brandName;
-    //   para.setAttribute("class","p")
-
-    //   var price = document.createElement("p");
-    //   price.innerText=elem.priceOf;
-    //   price.setAttribute("class","rs")
-    //   console.log(image,para,price)
-
-    //   box.append(image,para,price);
-    //   document.querySelector("#container").append(box);
-    // })
+    
