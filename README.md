@@ -5,3 +5,6 @@ https://medium.com/@pragatitiwari946/construct-week-of-unit-2-project-zara-108c3
 
  Demo Video Link :
 https://drive.google.com/file/d/1_rBjLbvrbuJAiaZani-0OV8tf170hsgW/view?usp=sharing
+
+Live Link :
+https://glittering-marshmallow-83b2af.netlify.app/
