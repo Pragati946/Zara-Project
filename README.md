@@ -33,26 +33,43 @@ First, I built a homepage. On the homepage I have created a logo, In the logo, I
 
 After the homepage, I have created a signup page where the customers can create an account, he or she can log in to the zara website.
 
+<div>
+ <img src="https://miro.medium.com/max/1100/0*u7OdTI3mIi3YB4X5"/>
+ </div>
+
 
 After signing, I have created a products page like the men's and women’s pages from where customers can shop from the men's and women's pages as per their choice.
 
+<div>
+ <img src="https://miro.medium.com/max/1100/0*_k8gh5RGr4FAMe7x"/>
+ </div>
 
 Womens Page
 
 Men's page
-
+<div>
+ <img src="https://miro.medium.com/max/1100/0*_Z6dhbWItjpMLQxd"/>
+ </div>
 
 After purchasing a product as per their choice, They can add it to the bag(cart) and remove it as well from the bag.
 
+<div>
+ <img src="https://miro.medium.com/max/1100/0*ueQZvzex3MMtdxyF"/>
+ </div>
 
 Add to Bag
 
 Remove or Delete
 
+<div>
+ <img src="https://miro.medium.com/max/1100/0*Y_MNSVhc0kNfx-KS"/>
+ </div>
 
 After that, the customer will be redirected to the Payment page i.e checkout page.
 Once payment is successful, an order will be placed and items will be delivered to the given address.
 
-
+<div>
+ <img src="https://miro.medium.com/max/1100/0*2IY-AuabVpm03zc-"/>
+ </div>
 I hope this article will help you to understand my project. Thank you for reading.
 
