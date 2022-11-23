@@ -27,6 +27,9 @@ How I cloned ZARA Website:
 
 First, I built a homepage. On the homepage I have created a logo, In the logo, I have fixed a homepage page link like whenever a customer will click on a logo then he will get redirected to the homepage. After that, I have created a fixed navbar on top and bottom and added some auto-timer depending on the slider image which looks more pretty, and then I have added some pictures related to Zara products which will be available on the Zara website. After that, I have added a footer on the Zara website.
 
+<div>
+<img src="https://miro.medium.com/max/1100/0*YTDJ_6Zg0miGepF-"/>
+</div>
 
 After the homepage, I have created a signup page where the customers can create an account, he or she can log in to the zara website.
 
